@@ -73,7 +73,7 @@ a {
 img,
 svg {
 	display: block;
-	max-height: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -393,7 +393,7 @@ svg {
 	margin-bottom: 10px;
 }
 
-.contacts__list_footer {
+.contacts__list-footer {
 	gap: 10px;
 	margin-bottom: 20px;
 }
@@ -585,6 +585,13 @@ svg {
 	}
 }
 
+.ymaps-2-1-79-image {
+	width: 35px;
+	height: 35px;
+}
+
+;
+
 /* Медиа запрос 600 */
 @media (max-width:600px) {
 
@@ -662,6 +669,5 @@ svg {
 		flex-wrap: wrap;
 		gap: 30px;
 	}
-
 
 }
