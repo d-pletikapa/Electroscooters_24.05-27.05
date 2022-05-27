@@ -6,7 +6,22 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>E-trans - Начни двигаться по новому</title>
+
+	<!-- Предзагрузка шрифтов -->
+	<link rel="preload" href="/fonts/inter_cyrillic-regular.woff2" as="font" crossorigin type="font/woff2">
+	<link rel="preload" href="/fonts/inter_cyrillic-700.woff2" as="font" crossorigin type="font/woff2">
+
 	<link rel="stylesheet" href="style/index.css">
+	<script defer src="js/index.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<!--
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+		integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+		crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+		integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+		crossorigin=""></script>
+-->
 </head>
 
 <body>
@@ -51,7 +66,7 @@
 
 		<section class="product" id="gyroscooter">
 			<div class="container product__container">
-				<img src="img/gyroscooter.png" alt="Гироскутеры">
+				<img class="product__photo" src="img/gyroscooter.png" alt="Гироскутеры">
 				<div class="product__content">
 					<h2 class="product__title">Гироскутер</h2>
 					<p class="product__description">Гироскутер — уличное электрическое транспортное средство, выполненное
@@ -70,7 +85,7 @@
 
 		<section class="product" id="monowheels">
 			<div class="container product__container">
-				<img src="img/monowheel.png" alt="Моноколесо">
+				<img class="product__photo" src="img/monowheel.png" alt="Моноколесо">
 				<div class="product__content">
 					<h2 class="product__title">Моноколесо</h2>
 					<p class="product__description">Электрический самобалансирующийся уницикл (моноцикл) с одним колесом и
@@ -89,7 +104,7 @@
 
 		<section class="product" id="electroscooter">
 			<div class="container product__container">
-				<img src="img/electroscooter.png" alt="Электросамокат">
+				<img class="product__photo" src="img/electroscooter.png" alt="Электросамокат">
 				<div class="product__content">
 					<h2 class="product__title">Электросамокат</h2>
 					<p class="product__description">Работает электросамокат следующим образом. Аккумуляторная батарея
@@ -106,7 +121,7 @@
 			</div>
 		</section>
 
-		<section class="contacts contacts-section">
+		<section class="contacts contacts__section">
 			<div class="container">
 				<h2 class="contacts__title">
 					Как нас найти?
@@ -176,8 +191,9 @@
 		</section>
 	</main>
 
-	<div class="container">
-		<footer class="footer">
+
+	<footer class="footer">
+		<div class="container">
 			<img class="footer__logo" src="img/logo.svg" alt="E-trans logo image">
 			<div class="footer__columns">
 				<div class="footer__column">
@@ -206,7 +222,7 @@
 				</div>
 				<div class="footer__column contacts">
 					<h3 class="footer__title">Контакты:</h3>
-					<div class="contacts__list">
+					<div class="contacts__list contacts__list-footer">
 						<a href="tel:+73848833812" class="contacts__link">
 							+7(384)883-38-12
 						</a>
@@ -241,8 +257,9 @@
 			<p>
 				<small class="footer__copyright">© E-Trans, 2022</small>
 			</p>
-		</footer>
-	</div>
+		</div>
+	</footer>
+
 </body>
 
 </html>
