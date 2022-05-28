@@ -49,8 +49,8 @@ L.marker([55.7724, 37.6252])
 const disabledScroll = () => {
 	document.body.scrollPosition = window.scrollY;
 	document.body.style.cssText = `
-	overflow:hidden;
-	position:fixed;
+	overflow: hidden;
+	position: fixed;
 	top: -${document.body.scrollPosition}px;
 	left: 0;
 	height: 100wh;
