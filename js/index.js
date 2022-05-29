@@ -49,13 +49,13 @@ L.marker([55.7724, 37.6252])
 const disabledScroll = () => {
 	document.body.scrollPosition = window.scrollY;
 	document.body.style.cssText = `
-	overflow: hidden;
 	position: fixed;
+	overflow: hidden;
 	top: -${document.body.scrollPosition}px;
 	left: 0;
-	height: 100wh;
-	width: 100wv;
 	padding-right: ${window.innerWidth - document.body.offsetWidth}px;
+	height: 100wh;
+	width: 100vw;
 	`
 };
 
@@ -152,6 +152,7 @@ const createModal = (title, description) => {
 <path d="M23.75 8.0125L21.9875 6.25L15 13.2375L8.0125 6.25L6.25 8.0125L13.2375 15L6.25 21.9875L8.0125 23.75L15 16.7625L21.9875 23.75L23.75 21.9875L16.7625 15L23.75 8.0125Z" fill="#00654E"/>
 </svg>
 `,
+		ariaLabel: 'Закрыть модальное окно',
 	})
 
 	$overlayElem.addEventListener('click', e => {
